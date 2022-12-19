@@ -127,3 +127,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 200)
     scroll()
 })
+
+
+
+function toggleParagraph(li) {
+    var paragraph = li.querySelector(".paragraph");
+    if (paragraph.style.display === "none") {
+      paragraph.style.display = "block";
+    } else {
+      paragraph.style.display = "none";
+    }
+  }

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propaganda Poster Gallery</title>
@@ -18,11 +19,24 @@
 
     <div class="menu">
         <div class="links">
-            <ul>
-                <li class="menu-wrap"><a href="#">About/<span>01</span></a></li>
-                <li class="menu-wrap"><a href="https://stanno.us" target="_blank" rel="noopener noreferrer">Portfolio Site/<span>02</span></a></li>
-                <li class="menu-wrap"><a href="#">Credit/<span>03</span></a></li>
-            </ul>
+            <li class="menu-wrap" onclick="toggleParagraph(this)">
+                <a>About/<span>01</span></a>
+                <p class="paragraph" style="display: none;">
+                    This is an interactive and experimental gallery for exploring and learning about Chinese propaganda posters, developed as my final project in the course Mass Culture: China, taught by Professor Coderre at New York University. The goal was to create a website that is more memorable for users that emphasizes the artistic beauty of Chinese Propaganda posters.  Other existing sites often act as more of a databases or archives.
+
+                    The gallery contains some posters that have been altered using artificial intelligence (AI) on DALL-E 2. This is intended to showcase the potential for using AI to generate new posters and tap into alternate realities in Chinese society if history was rewritten. AI altered photos might show historical figures or events in a more positive or negative light, or they might depict events that never actually happened. By showing these alternate realities, the AI altered photos can provide insight into how different historical events or figures might have shaped Chinese society if they had occurred or been perceived differently. They can also allow users to consider the consequences of historical events and the impact they have had on society.
+                     
+                </p>
+              </li>
+              <li class="menu-wrap" onclick="toggleParagraph(this)">
+                <a>Credit/<span>02</span></a>
+                <p class="paragraph" style="display: none;">
+                    The posters sources on this website are from https://chineseposters.net/, a large and authentic collection of Chinese propaganda posters from the collections of Stefan Landsberger (Leiden University, University of Amsterdam), the International Institute of Social History (IISH, Amsterdam, Netherlands), and a private collector who prefers not to be named. Together these collections consist of over 7,000 pieces. Link can be found here: 
+                <a href="https://chineseposters.net/" style="font-size: xx-large;
+                color: rgb(168, 60, 45);" target="_blank" rel="noopener noreferrer">chineseposters.net</a>
+                </p>
+              </li>
+              <li class="menu-wrap"><a href="https://stanno.us" target="_blank" rel="noopener noreferrer">Portfolio Site/<span>03</span></a></li>
         </div>
     </div>
 
@@ -33,10 +47,6 @@
     </div>
 
     <main>
-        <!-- <div class="landing">
-
-
-        </div> -->
         <div class="scrollable">
             <div class="content">
                 <section class="img-section">
